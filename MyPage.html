@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Watercolors</title>
+
+        <link rel="Stylesheet" href="watercolorCSS.css">
+		<script type="text/javascript" src="watercolorScript.js"></script>
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+    </head>
+	
+    <body>
+        <header id="header">
+            <nav>
+				<a href="#aboutMe">O mnie</a>
+                <div class="dropdown">
+					<a class="dropbtn">Teoretycznie</a>
+					<div class="dropdown-content">
+						<a href="#def">Definicja akwareli</a>
+						<a href="#history">Historia akwareli</a>
+						<a href="#artists">Artyści</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn">Praktycznie</a>
+					<div class="dropdown-content">
+						<a href="#tools">Przybory</a>
+						<a href="#white">Biała farba</a>
+						<a href="#mixColors">Łączenie kolorów</a>
+						<a href="#colors">Kolorystyka</a>
+						<a href="#difficulties">Trudności</a>
+					</div>
+				</div>
+            </nav>
+			<div class="logoTitle">
+				<a href="index.html"><div class="rotating"><img height="45px" src="Obrazy/kropla.jpg" /></div></a>
+				<h1 id="logo">Akwarele</h1>
+			</div>
+			
+        </header>	
+		
+        <section class="image" style="background-image: url('Obrazy/sukulet.jpg');">
+		<div class="containerFlex">
+			<div class="quotation">
+				<i>"Wszystko, co możesz sobie wyobrazić </p> jest prawdziwe."</i>
+				</p>
+				<i> - Pablo Picasso </i>
+			</div>
+			<div class="arrowTable">
+			<table>
+				<tr> 
+					<td align="center"> <div class="circleArrow"></div> </td>
+				</tr>
+				<tr>
+					<td align="center"> <div class="circleArrow" id="circleArrowEl1"></div> </td>
+				</tr>
+				<tr> 
+					<td align="center"> <div class="circleArrow" id="circleArrowEl2"></div> </td>
+				</tr>
+				<tr> 
+					<td align="center"> <div class="circleArrow" id="circleArrowEl3"></div> </td>
+				</tr>
+				<tr>
+					<td align="center"><div class="triangle"></div></td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		</section>
+
+        <section class="text" id="aboutMe">
+			<div class="titleOfSection">
+				<h2 >O mnie</h2>
+			</div>
+            <div class="wrapper1">
+				<div class="boxSign">
+					<img height="240px" src="Obrazy/podpis.jpg" alt="the sign">
+				</div>
+				<div class="boxPhoto">
+					<img height="400px" src="Obrazy/mk.jpg" alt="the portrait">
+				</div>
+			</div>
+			<div class="wrapper2">
+				<div class="boxYears">
+					<h2> Jak długo maluję? </h2>
+					<img class="circlePic" id="blueImg" src="Obrazy/blueCircleC.jpg" onclick="SetSecondImg2()">
+					<p class="textAboutMe" align="justify">Malowaniem nie zajmuję się profesjonalnie. Jest to jedna z moich pasji, która pozwala mi rozwijać kreatywność. </p>
+				</div>
+				<div class="boxKindOf">
+					<h2 > Motywy przewodnie </h2>
+					<img class="circlePic" id="roseImg" src="Obrazy/pinkCircleC.jpg" onclick="SetSecondImg()">
+					<p class="textAboutMe" > Najczęściej maluję obrazy związane z naturą, kosmosem. Poprzez sposób w jaki maluję staram się podkreślać ich tajemniczość i wyjątkowość. </p>
+				</div>
+				<div class="boxFavourite">
+					<h2 > Ulubiona farba </h2>
+					<img class="circlePic" id="turkusImg" src="Obrazy/turkusCircleC.jpg" onclick="SetSecondImg3()">
+					<p class="textAboutMe">  Do kolorów, które najbardziej sobie cenię, należą: </p>
+					<ul>
+						<li> Turquoise Green (No. 57), Kuretake Gansai Tambi Watercolor </li>
+						<li> Red Gold (No. 902), Kuretake Gansai Tambi Watercolor </li>
+					</ul>
+				</div>
+			</div>
+			<div class="whiteSpace">
+				<a href="#header"><div class="doSomething"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></div></a>
+			</div>                
+        </section>
+
+        <section class="image"  style="background-image: url('Obrazy/niebo2.jpg');"></section>
+
+        <section class="text">
+			<div class="titleOfSection" id="def">
+				<h2>Co to jest akwarela?</h2>
+			</div>
+            <div class="wrapper3">
+				<div>
+					<p>Jest to nazwa techniki malarskiej i jednocześnie nazwa obrazów wykonywanych tą techniką. </p>
+					<p>Malowanie polega na stopniowym nakładaniu cienkich, niemalże transparentnych warstw farby, przez które przebija podłoże. Jest to technika uważana za jedną z trudniejszych, gdyż wymaga niesamowitej precyzji i dokładności w nakładaniu farb na papier. Rozcieńczone pigmenty nie pokrywają całkowicie faktury papieru, lecz pozostawiają ją dobrze widoczną. Z tego względu na efekt bardzo duży wpływ ma barwa i faktura samego papieru.  </p>
+					<p>
+					<p>Obrazy malowane tą techniką mają zwykle delikatną, zwiewną kolorystykę, gdyż możliwe tutaj do uzyskania barwy to głównie barwy pastelowe. Inspirują swoją czystością, przeźroczystością i poświatą barw, możliwością przekazywania subtelnych niuansów, miękkością kolorowych przejść i zdolnością oddawania wrażenia przestrzeni. </p>
+					<p>Technikę tę stosuje się do tematów, które wymagają tego rodzaju kolorystyki i jednocześnie nie wymagają „cyzelowania” detali – stosuje się ją m. in. do pejzaży, „zwiewnych” portretów.</p>	
+					<div id=containerColor>
+						Przelej farbami
+						<div id=flip>
+							<div><div>dmuchawca</div></div>
+							<div><div>zachód słońca</div></div>
+							<div><div>Wszystko</div></div>
+						</div>
+						na papier!
+					</div>
+				</div>
+				<div>
+					<video id="myvideo" width="700px" height="400px" autoplay controls loop> <!-- embed -->
+						<source  src="Videos/Painting.mp4" type="video/mp4">
+					</video>
+					<script>document.getElementById('myvideo').pause(); </script>
+				</div>
+			</div>
+				<div class="whiteSpace">
+					<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+				</div>        
+        </section>
+
+        <section class="image" style="background-image: url('Obrazy/para.jpg');"></section>
+
+        <section class="text" id="history" >
+			<div class="titleOfSection">
+				<h2>Historia  akwareli</h2>
+			</div>
+			Wolisz czytać z muzyką? Kliknij:
+			<audio id="mymusic" autoplay controls wmode="transparent" loop="true">
+				<source src="Music/muzykaWTle.mp3" >
+			</audio>
+			<script>document.getElementById('mymusic').pause();  </script>
+			<div class="wrapper4">
+				<div>
+					<p>Malowanie akwarelą jest bardzo starą techniką, przypuszcza się że mogła być wykorzystywana na malowidłach w paleolitycznej Europie.</p>
+					<p>W starożytnym Egipcie używano jej do ozdabiania papirusowych rękopisów. Stosowana była w rzymskim malarstwie ściennym i katakumbowym, a na Dalekim Wschodzie techniką tą zdobiono wachlarze i parawany.</p>
+					<p>W okresie średniowiecza wykorzystując wodę z pigmentem zdobiło się księgi. Na stronach książek powstawały kolorowe inicjały, ilustracje. </p>
+					<p>W Europie akwarele zaczęły zyskiwać popularność w epoce renesansu. Europejscy malarze stosowali mieszkanki farb wodnych, którymi pokrywali freski na ścianach. Wraz z rozwojem wytwórstwa papieru coraz częściej powstawały też obrazy malowane na kartkach. </p>
+					<p>Do rozpowszechnienia akwareli głównie przyczynił się niemiecki artysta Albrecht Dürer, który żył w latach: 1471-1528. Rozwinął on technikę malowania akwarelami. Opracowywał metody dotyczące pracy z nimi. Namalował kilka znakomitych obrazów przedstawiających pejzaże. W swoich pracach podkreślał świetlistość oraz efekt przezroczystości. Pomimo, iż inspirował innych malarzy do eksperymentowania z farbami wodnymi, to wciąż tej techniki używano głównie tylko do szkiców i ilustracji przedstawiających rośliny oraz zwierzęta. Z inicjatywy Hansa Bola w Niemczech postała szkoła malowania akwarelami.  </p>
+					<p>Od XVII wieku akwarela stała się samodzielną techniką. Coraz częściej wykorzystywano tę technikę do tworzenia nie tylko szkiców, ale pejzaży. Swój udział mieli w tym artyści tacy jak: Paul Sandby, Thomas Girtin oraz J.M.W. Turner. </p>
+					<p>W Polsce malarzami, którzy posługiwali się tą techniką byli m.in. Julian Fałat, Juliusz Kossak, Piotr Michałowski. </p>
+					<p> Obecnie akwarela jest ulubioną techniką pejzażystów, portrecistów, stosowana jest także przez ilustratorów. Rozmycia oraz delikatne kolorystyczne przejścia, jakie oferuje, są chętnie wykorzystywane do ukazywania piękna przyrody (nieba, liści). Akwarela często występuje jako element technik mieszanych z tuszem, pastelem, temperą i innymi.</p>
+				</div>
+				<div>
+					<img class="examplePic" title="autor: Teresa Ewa Ledzińska" src="Obrazy/historia1.jpg">
+					<p/>
+					<img class="examplePic" title="autor: Aleksander Swinarski" src="Obrazy/historia2.jpg">
+				</div>
+			</div>	
+			<div class="whiteSpace">
+				<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+			</div>
+        </section>
+		
+		<section class="image" style="background-image: url('Obrazy/sloik2.jpg');"></section>
+
+        <section class="text" id="artists">
+            <div class="titleOfSection">
+				<h2>Sławni artyści</h2>
+			</div>
+			<div class="wrapper2">
+				<div>
+					<h2> Vincent van Gogh </h2>
+					</br>
+					<img class="circlePic" id="goghImg" src="Obrazy/vanGogh.jpg" onclick="SetGoghImg()">
+					<p class="uwaga">(Kliknij, aby zobaczyć obraz malarza.)</p>
+					</br>
+					<p>Vincent van Gogh był holenderskim malarzem postimpresjonistycznym, który żył w latach 1853 – 1890. Jest uważany za jednego z największych malarzy w historii. Jego obrazy charakteryzują się żywą kolorystyką. Jedną z technik malarskich, jakich używał, były akwarele.</p>
+					<p>Artysta cierpiał na napady lękowe i ataki spowodowane zaburzeniami psychicznymi, które mogły mieć wpływ na jego twórczość.</p>
+				</div>
+				<div>
+					<h2 > Albrecht Durer</h2>
+					</br>
+					<img class="circlePic" id="alImg" src="Obrazy/albrecht.jpg" onclick="SetAlImg()">
+					<p class="uwaga">(Kliknij, aby zobaczyć obraz malarza.)</p>
+					</br>
+					<p>Albrecht Dürer urodził się w 1471 r. w Norymberdze, zmarł tamże w roku 1528. Był niemieckim malarzem i grafikiem, przedstawicielem renesansu. </p>
+					<p> Uważa się, że największy wpływ na twórczość Dürera wywarły podróże do Włoch. To one ukształtowały jego postawę artystyczną, która łączy w sobie cechy sztuki północnej i śródziemnomorskiej. Malarz znany jest przede wszystkim z autoportretów, drzeworytów i miedziorytów.</p>
+				</div>
+				<div>
+					<h2 > Thomas Girtin </h2>
+					</br>
+					<img class="circlePic" id="tomImg" src="Obrazy/thomas.jpg" onclick="SetTomImg()">
+					<p class="uwaga">(Kliknij, aby zobaczyć obraz malarza.)</p>
+					</br>
+					<p> Thomas Girtin urodził się w 1775 roku. Był angielskim malarzem, rysownikiem i grafikiem. Malował głównie akwarelami, przyczynił się do wzrostu znaczenia i popularności tej techniki plastycznej</p>
+					<p> Stosował bogatą paletę ciepłych, lecz intensywnych kolorów. W jego twórczości dominują pejzaże oraz architektura (szczególnie opuszczone i zrujnowane zamki).</p>
+				</div>
+			</div>
+			<div class="whiteSpace">
+				<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+			</div>
+        </section>
+
+		<section class="image" style="background-image: url('Obrazy/bottle.jpg');"></section>
+
+        <section class="text" id="tools">
+            <div class="titleOfSection">
+				<h2>Co jest potrzebne, aby malować techniką akwarelową?</h2>
+			</div>
+			<div class="textBlock">
+				</br>
+				<h3>Farby</h3>
+                <p>Akwarele to farby wytwarzane z pigmentów barwionych i spoiwa z gumy arabskiej, rozpuszczonych w wodzie. Mogą być w formie kostek, wymagają wtedy użycia dużej ilości wody, lub w tubkach, gdzie są już częściowo rozcieńczone. </p>
+				<p>Farby miesza się za pomocą delikatnych pędzli na palecie, a dopiero później nakłada się je na papier.</p>
+				</br>
+				<h3>Papier</h3>
+				<p>Wyróżnia się trzy podstawowe rodzaje papieru:</p>
+				<ul>
+					<li>Szorstki - wolno schnie, początkującym artystom sprawia wiele trudności. </li>
+					<li>Bardzo gładki (prasowany na gorąco) - stosowany głównie do precyzyjnych działań takich jak rysunek tuszem, piórkiem, wykonywanie ilustracji i projektów. A więc wszędzie tam, gdzie istotne jest aby warstwa farby rozłożyła się równomiernie na podłożu.</li>
+					<li>Pośredni/Fakturowy  (prasowany na zimno) –najbardziej popularny papier, gdyż nadaje się do każdego rodzaju malowania i co ważne, nie przysparza trudności początkującym malarzom.</li>
+				</ul>
+				<p>Jakość i grubość papieru determinowana jest przez jego gramaturę – powszechnie uważa się, że im grubszy papier tym odporniejszy na uszkodzenia fizyczne. Najczęściej do malowania akwarelą stosuje się więc  gramatury: 185g, 300r i 640g.</p>
+				</br>
+				<h3>Pędzle</h3>
+				<p>Spośród ogromnej gamy pędzli akwareliści najczęściej używają pędzli miękkich. Zatrzymują one wodę,  wykonane są z naturalnego materiału: szczecina, włosie, lub z mieszanki naturalnych materiałów z syntetycznymi imitującymi naturalne. Profesjonaliści najczęściej używają pędzli wykonanych z włosia sobolowego, norek, z ogonów łasic, kun, wiewiórek, wydr.</p>
+				<p></p>				
+			</div>
+			<div align="center">
+				<video id="myvideo2" width="70%"  autoplay controls loop> 
+					<source  src="Videos/PaintingTools.mp4" type="video/mp4">
+				</video>
+				<script>document.getElementById('myvideo2').pause(); </script>
+			</div>
+			<div class="whiteSpace">
+				<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+			</div>
+		</section>
+        <section class="image" style="background-image: url('Obrazy/planet.jpg');"></section>
+		
+		<section class="text whiteWhereIs">
+			<div class="titleOfSection">
+				<h2>Gdzie jest biała farba?</h2>
+			</div>
+				</br>
+				</br>
+				<div class="wrapper2" >
+					<div>
+						<img class="circlePic" id="white1" src="Obrazy/pytajnik.jpg" onmouseover="this.src='Obrazy/biala1.jpg'" onmouseout="this.src='Obrazy/pytajnik.jpg'">
+					</div>
+					<div>
+						<img class="circlePic" id="white2" src="Obrazy/pytajnik.jpg" onmouseover="this.src='Obrazy/biala2.jpg'" onmouseout="this.src='Obrazy/pytajnik.jpg'"onmouseover="hover(this);" onmouseout="unhover(this);">
+					</div>
+					<div>
+						<img class="circlePic" id="white3" src="Obrazy/pytajnik.jpg" onmouseover="this.src='Obrazy/biala3.jpg'" onmouseout="this.src='Obrazy/pytajnik.jpg'">
+					</div>
+				</div>
+				<div class="tekst">
+					<h2> Wyjaśnienie </h2>
+                    <p>Biała farba wydaje się być niezbędnym elementem w palecie kolorów. Podczas malowania akrylami bądź farbami olejnymi to właśnie białej farby zużywa się najwięcej. Służy przede wszystkim jako baza do wielu jasnych kolorów.</p>
+					<p>Natomiast w malarstwie akwarelowym nie wykorzystuje się białej farby. Zamiast tego podkreśla się biały podkład (np. papier), który prześwituje przez nakładane warstwy pigmentu. Tym sposobem uzyskuje się charakterystyczne dla tej techniki delikatnie rozmyte kształty i barwy.  </p>
+				</div>
+				<!--- carousel START -->
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+							<img src="Obrazy/kopula.jpg" style="width:100%">
+							<div class="text1">Las pod kopułą</div>
+					</div>
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="Obrazy/rosliny.jpg" style="width:100%">
+					<div class="text1">Rośliny w szkle</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="Obrazy/drzewko.jpg" style="width:100%">
+					<div class="text1">Roślina ze złotymi liśćmi</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				<script type="text/javascript"> showSlides(slideIndex); </script>
+				<div class="whiteSpace">
+					<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+				</div>
+		</section>
+
+        <section class="image" style="background-image: url('Obrazy/zima.jpg');"></section>
+		
+		<section class="text" id="mixColors">
+            <div class="titleOfSection">
+				<h2>Jak z trzech kolorów stworzyć całą paletę barw?</h2>
+			</div>
+				</br></br></br>
+				<div class="wrapper1" >
+					<div>
+						<img width="100%" id="paleta" src="Obrazy/palete0.jpg" />
+					</div>
+					<div>
+						<div class="slidecontainer">
+							<input type="range" min="1" max="5" value="1" class="sliderRange" id="myRange" oninput="changeSlider()">
+							<p>Etap: <span id="demo"></span></p>
+						</div>
+						<script type="text/javascript">
+						var sliderPalette = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		var sourceColor = ['Obrazy/palete1.jpg','Obrazy/palete2.jpg', 'Obrazy/palete3.jpg','Obrazy/palete4.jpg','Obrazy/palete0.jpg'];
+			
+
+			// Update the current slider value (each time you drag the slider handle)
+			sliderPalette.oninput = function changeSlider() {
+			output.innerHTML = this.value;
+				if(output.innerHTML == 2) 
+					document.getElementById('paleta').src = sourceColor[0];
+				else if(output.innerHTML == 3)
+					document.getElementById('paleta').src = sourceColor[1];
+				else if(output.innerHTML == 4)
+					document.getElementById('paleta').src = sourceColor[2];
+				else if(output.innerHTML == 5)
+					document.getElementById('paleta').src = sourceColor[3];
+				else if(output.innerHTML == 1)
+					document.getElementById('paleta').src = sourceColor[4];
+			}</script> <!-- here soething wrong-->
+						</br>
+						<h3>Wyjaśnienie: </h3>
+						<p>Choć czasem trudno to sobie wyobrazić wszystkie istniejące kolory powstają z zaledwie trzech podstawowych barw:  </p>
+						<ul>
+							<li> żółty </li>
+							<li>czerwony</li>
+							<li>niebieski</li>
+						</ul>
+						<p> Tych trzech kolorów podstawowych nie można uzyskać z połączenia farb o jakichkolwiek innych barwach. </p>
+						<p>Barwy drugorzędowe, zwane także pochodnymi, są barwami otrzymywanymi przez zmieszanie ze sobą dwóch barw pierwszorzędowych (podstawowych). Ze zmieszania farby czerwonej z żółtą uzyskamy barwę pomarańczową, z połączenia farby czerwonej z niebieską - fioletową, a niebieskiej z żółtą - zieloną.</p>
+						<p> Barwy trzeciorzędowe – trzecia kategoria na kole barw. Mieszczą się pomiędzy każdą z barw podstawowych i drugorzędowych. Każdy kolor trzeciorzędowy uzyskuje się, mieszając podstawowy z najbliższym drugorzędowym. Zatem kolor trzeciorzędowy to barwa drugorzędowa składająca się w jednej trzeciej z podstawowej i w dwóch trzecich z innej.</p>
+						<p>Kolor biały i czarny służy do rozjaśniania lub przyciemniania innych kolorów. Kolor czarny możemy uzyskać poprzez połączenie barwy czerwonej, zielonej i niebieskiej. </p>
+					</div>
+				</div>
+				<div class="whiteSpace">
+					<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+				</div>
+			 </section>
+		
+		 <section class="image" style="background-image: url('Obrazy/lis.jpg');"></section>
+
+        <section class="text" id="colors">
+            <div class="titleOfSection">
+				<h2>Kolorystyka w akwarelach</h2>
+			</div>
+				<img class="paletaK" src="Obrazy/nazwyKolorow2.jpg" />
+				<p>Malarze stosują dużo bardziej rozbudowane nazewnictwo w barwach. Dla przykładu, w zależności od odcienia, kolor pomarańczowy może być dla nich ugierem, sjeną paloną lub sjeną naturalną.  </p>
+			<div class="wrapper5">
+				<div>
+					<p>Podczas malowania akwarelami można wyszczególnić grupę barw najczęściej stosowanych. Są to:</p>
+					<ul>
+						<li>Żółcień cytrynowa </li>
+						<li>Żółcień kadmowa cytrynowa</li>
+						<li>Ugier</li>
+						<li> Sjena naturalna </li>
+						<li>Sjena palona</li>
+						<li>Czerwień kadmowa</li>
+						<li>Róż permanentny</li>
+						<li>Kraplak</li>
+						<li>Umbra naturalna</li>
+						<li>Zieleń permanentna</li>
+						<li>Zieleń szmaragdowa</li>
+						<li>Zieleń Winsora</li>
+						<li>Błękit kobaltowy</li>
+						<li>Błękit pruski</li>
+						<li>Ultramaryna francuska</li>
+						<li>Czerń kostna</li>
+					</ul>
+				</div>
+				<div>
+					<img class="circlePic"  src="Obrazy/hey.jpg" />
+					</br>
+					<img width="450px"  src="Obrazy/obrazZLisem.jpg" />
+				</div>
+			</div>
+			<div class="whiteSpace">
+				<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+			</div>
+        </section>
+
+        <section class="image" style="background-image: url('Obrazy/foxie3.jpg');"></section>
+
+        <section class="text" id="difficulties">
+            <div class="titleOfSection">
+				<h2>Trudności związane z akwarelą</h2>
+			</div>
+			<div class="wrapper3">
+				<div>
+					<p>Akwarela jest jedną z najtrudniejszych technik malarskich, gdyż nie daje prawie żadnej możliwości dokonywania poprawek i retuszy. </p>
+					<p>W szczególności, nie można usunąć namalowanego fragmentu, a jedynie przerobić go, i to też w niewielkim stopniu. Przyczyną jest fakt, iż nie można w tej technice stosować krycia farbą. Stąd też właściwie nie używa się tu białej farby – na papierze nic nie zasłoni, a zamalowany obszar można w ostateczności nieco rozjaśnić, malując zamalowane miejsce samą wodą, co jednak powoduje przy okazji rozszerzenie się barwnej plamy. Również nakładanie jasnych kolorów na ciemniejsze nie rozjaśnia ich, a jedynie zmienia odcień. </p>
+					<p>Wyraźniejszą zmianę daje jedynie nałożenie ciemniejszej barwy na jaśniejszą, jednak praktycznie cała akwarela jest transparentna, czyli przezroczysta. Farby miesza się na palecie , ponieważ nakładanie bezpośrednio pigmentu na papier daje „sztuczny” efekt. Kolor utworzony na palecie nakłada się na papier.</p>
+				</div>
+				<div>
+					<video id="myvideo3" width="100%" autoplay controls loop> <!-- embed -->
+						<source  src="Videos/FromMoonTo.mp4" type="video/mp4">
+					</video>
+					<script>document.getElementById('myvideo3').pause(); </script>
+				</div>
+			</div>
+            <div class="whiteSpace">
+				<a href="#header"><img class="backToTop" src="Obrazy/powrotNaGore2.jpg"/></a>
+			</div>
+		</section>
+		
+		<section class="image" style="background-image: url('Obrazy/pies.jpg');"></section>
+		
+        <footer id="footer">
+			<p> Autor: Marta Kleczko</p>
+			<a href="https://www.instagram.com/leaf_and_water/" ><img id="igButton" src="Obrazy/ig.png" /></a>
+        </footer>
+		<script> 
+		 showText();
+		</script>
+    </body>
+</html>
