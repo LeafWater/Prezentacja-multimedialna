@@ -15,7 +15,7 @@ Project is created with:
 To open the project locally it is required to download all files and folders without changing files' paths. 
 The main file which starts the presentation is "MyPage.html".
 
-## Screens
+## Screenshots
 Below there are several sample screenshots of the presentation.
 ![screen1](/Obrazy/screen1.png)
 ![screen2](/Obrazy/screen2.png)
